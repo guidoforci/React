@@ -1,15 +1,12 @@
-import "./App.css"
+import './App.css'
+//Componentes
 import Navbar from "./Navbar/Navbar";
-import CartWidget from "./CartWidget/CartWidget";
-import ItemListContainer from "./ItemListContainer/itemListContainer";
-import { ItemCount } from "./ItemCount/ItemCount";
-
+import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 const App = () => {
   return (
     <>
       <Navbar/>
-      <ItemCount ValorInicial={1} Stock={15}/>
-      <ItemListContainer contadorDelItem={0}/>
+      <ItemListContainer/>
     </>
   );
 }

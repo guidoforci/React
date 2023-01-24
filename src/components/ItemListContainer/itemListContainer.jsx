@@ -1,12 +1,21 @@
-import React from 'react';
+import {useState,useEffect} from 'react'
+import { ItemList } from '../ItemList/ItemList'
 
-const ItemListContainer = ({contadorDelItem}) => {
+export const ItemListContainer = () => {
+    const [productos, setProductos] = useState([])
+    useEffect(() => {
+        fetch('./json/productos.json')
+        .then(response => response.json())
+        .then(products => {
+            console.log(products)
+            const productsList = ItemList({products}) //Array de productos en JSX
+            console.log(productsList)
+            setProductos(productsList)
+        })
+    }, [])
     return (
-        <>
-            <button className="btn btn-primary">AGREGADO ITEM LIST CONTAINER</button>
-            <p>{contadorDelItem}</p>
-        </>
-    );
+        <div>
+            {productos}
+        </div>
+    )
 }
-
-export default ItemListContainer;
