@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
             fetch('../json/productos.json')
             .then(response => response.json())
             .then(items => {
-                const products = items.filter(prod => prod.idCategoria === parseInt(idCategoria))
+                const products = items.filter(prod => prod.idCategoria === idCategoria)
                 const productsList = ItemList({products}) //Array de productos en JSX
                 console.log(productsList)
                 setProductos(productsList)
