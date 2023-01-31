@@ -1,8 +1,8 @@
-import React from 'react';
+
 import CartWidget from '../CartWidget/CartWidget';
 import SeccionHome from "./Secciones/SeccionHome";
 import Categorias from './Categorías/categorias';
-import SeccionEnvios from "./Secciones/SeccionEnvios";
+import SeccionContacto from "./Secciones/SeccionContacto";
 import RedesSociales from './RedesSociales/RedesSociales';
 
 
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <SeccionHome/>
                         <Categorias/>
-                        <SeccionEnvios/>
+                        <SeccionContacto/>
                     </ul> 
                     <div>
                         <RedesSociales/>

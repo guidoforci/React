@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 const Categorias = () => {
     return (
@@ -7,12 +7,11 @@ const Categorias = () => {
                 <button className='btn btn-primary'>CATEGORIAS</button> 
             </a>
             <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">INDUMENTARIA</a></li>
-                <li><a className="dropdown-item" href="#">ACCESORIOS</a></li>
-                <li><a className="dropdown-item" href="#">INFO/AYUDA</a></li>
-                <li><a className="dropdown-item" href="#">EQUIPÁ TU GIMNASIO</a></li>
+            <li><Link className="dropdown-item" to={"/category/1"}>INDUMENTARIA</Link></li>                
+            <li><Link className="dropdown-item" to={"/category/2"}>ACCESORIOS</Link></li>
+            <li><Link className="dropdown-item" to={"/category/3"}>SUPLEMENTOS</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Contacto</a></li>
+            <li><Link className="dropdown-item" to={"/category/4"}>EQUIPÁ TU GIMNASIO O BOX</Link></li>
             </ul>
         </li>
     );
