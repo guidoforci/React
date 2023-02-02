@@ -12,9 +12,9 @@ export const ItemCount = ({ valInicial, stock }) => {
 
     return (
         <>
-            <button className="btn btn-primary" onClick={() => sumar()}>+</button>
+            <button className="btn btn-primary botonMas" onClick={() => sumar()}>+</button>
             {contador}
-            <button className="btn btn-primary" onClick={() => restar()}>-</button>
+            <button className="btn btn-primary botonMenos" onClick={() => restar()}>-</button>
         </>
     )
 }

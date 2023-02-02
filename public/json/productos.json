@@ -2,7 +2,7 @@
 
     {"id": 1,
         "idCategoria": "zapatillas",
-        "nombre": "Reebok Zapatillas NANO X2",
+        "nombre": "Reebok Zapatillas",
         "marca": "Reebok",
         "modelo": "Nano X2",
         "precio": 47000,
@@ -12,9 +12,9 @@
     {
         "id": 2,
         "idCategoria": "zapatillas",
-        "nombre": "Under Armour Zapatillas REIGN 4",
+        "nombre": "Under Armour Zapatillas",
         "marca": "Under Armour",
-        "modelo": "Nano X2",
+        "modelo": "REIGN 4",
         "precio": 72000,
         "stock": 38,
         "img": "under-armour-zapatillas-tribase-reign-4.jpg" 
@@ -23,7 +23,7 @@
     {
         "id": 3,
         "idCategoria": "zapatillas",
-        "nombre": "Reebok Zapatillas NANO X1",
+        "nombre": "Reebok Zapatillas",
         "marca": "Reebok",
         "modelo": "Nano X1",
         "precio": 36000,
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "idCategoria": "zapatillas",
-        "nombre": "Adidas Zapatillas POWERLIFT 5",
+        "nombre": "Adidas Zapatillas",
         "marca": "Adidas",
         "modelo": "Powerlift 5",
         "precio": 86000,
@@ -43,7 +43,7 @@
     {
         "id": 5,
         "idCategoria": "zapatillas",
-        "nombre": "Nike Zapatillas METCON 7 FLYEASE",
+        "nombre": "Nike Zapatillas FLYEASE",
         "marca": "Nike",
         "modelo": "Metcon 7",
         "precio": 57000,
@@ -53,7 +53,7 @@
     {
         "id": 6,
         "idCategoria": "indumentaria y accesorios",
-        "nombre": "Kruskis Camiseta Manga Corta Crossfit DNA",
+        "nombre": "Kruskis Camiseta Manga Corta Crossfit",
         "marca": "Kruskis",
         "modelo": "DNA",
         "precio": 6000,
@@ -65,7 +65,7 @@
         "idCategoria": "suplementos",
         "nombre": "Gold Nutrition Creatina 1000mg 60 Unidades Sabor Neutro",
         "marca": "Gold Nutrition",
-        "modelo": "Creatina",
+        "modelo": "",
         "precio": 9000,
         "stock": 15,
         "img": "gold-nutrition-creatina-1000mg-60-unidades-sabor-neutro.jpg"
@@ -73,7 +73,7 @@
     {
         "id": 8,
         "idCategoria": "suplementos",
-        "nombre": "BCAA SIS Aminoácidos 120 Unidades",
+        "nombre": "SIS Aminoácidos 120 Unidades",
         "marca": "Science In Sport",
         "modelo": "BCAA",
         "precio": 7500,
@@ -96,7 +96,7 @@
         "idCategoria": "equipatugym",
         "nombre": "Bodytone Disco Bumper De Goma 25kg",
         "marca": "Bodytone",
-        "modelo": "Bumper Plate",
+        "modelo": "",
         "precio": 15300,
         "stock": 33,
         "img": "bodytone-disco-bumper-de-goma-25kg.jpg"
@@ -107,7 +107,7 @@
         "idCategoria": "equipatugym",
         "nombre": "Spokey Barra de Crossfit",
         "marca": "Aketon",
-        "modelo": "Spokey",
+        "modelo": "",
         "precio": 18550,
         "stock": 12,
         "img": "spokey-barra-crossfit-aketon.jpg"
@@ -119,7 +119,7 @@
         "idCategoria": "equipatugym",
         "nombre": "Dkn Technology Power Rack Jaula Crossfit Half",
         "marca": "Dkn",
-        "modelo": "Half",
+        "modelo": "",
         "precio": 15700,
         "stock": 15,
         "img": "dkn-technology-power-rack-jaula-crossfit-half.jpg"
@@ -130,7 +130,7 @@
         "idCategoria": "indumentaria y accesorios",
         "nombre": "Adidas Camiseta Manga Corta Wo Base Logo",
         "marca": "Adidas",
-        "modelo": "WO",
+        "modelo": "",
         "precio": 8500,
         "stock": 23,
         "img": "adidas-camiseta-manga-corta-wo-base-logo.jpg"
@@ -141,7 +141,7 @@
         "idCategoria": "indumentaria y accesorios",
         "nombre": "Adidas Camiseta Manga Corta Hiit En",
         "marca": "Adidas",
-        "modelo": "Hiit",
+        "modelo": "",
         "precio": 7900,
         "stock": 36,
         "img": "adidas-camiseta-manga-corta-hiit-en.jpg"
@@ -162,7 +162,7 @@
     "idCategoria": "indumentaria y accesorios",
     "nombre": "Adidas Pantalones Cortos D4 Hiit Gf 7",
     "marca": "Adidas",
-    "modelo": "D4 Hiit",
+    "modelo": "",
     "precio": 5000,
     "stock": 12,
     "img": "adidas-pantalones-cortos-d4-hiit-gf-7.jpg" },
@@ -189,16 +189,16 @@
     "idCategoria": "equipatugym",
     "nombre": "Kettlebell Olive Cast Iron 28kg",
     "marca": "Olive",
-    "modelo": "Cast Iron",       
+    "modelo": "",       
     "precio": 17850,
     "stock": 5,
     "img": "olive-cast-iron-28kg.jpg"},
 
     {"id": 20,
     "idCategoria": "equipatugym",
-    "nombre": "Olive Rubber Hex 8kg Par",
+    "nombre": "Mancuernas Olive Rubber Hex 8kg Par",
     "marca": "Olive",
-    "modelo": "Rubber Hex",       
+    "modelo": "",       
     "precio": 13950,
     "stock": 16,
     "img": "olive-rubber-hex-8kg-par.jpg"
@@ -208,7 +208,7 @@
     "idCategoria": "suplementos",
     "nombre": "Gold Nutrition Avena Proteica Vegana Chocolate 300gr",
     "marca": "Gold Nutrition",
-    "modelo": "Avena Proteica",
+    "modelo": "",
     "precio": 3600,
     "stock": 18,
     "img": "gold-nutrition-avena-proteica-vegana-chocolate-300gr.jpg" 
@@ -220,7 +220,7 @@
 "idCategoria": "suplementos",
 "nombre": "Gold Nutrition Cápsulas De Cafeína 90 Unidades",
 "marca": "Gold Nutrition",
-"modelo": "Cápsulas de Cafeina",
+"modelo": "",
 "precio": 3600,
 "stock": 31,
 "img": "gold-nutrition-capsulas-de-cafeina-90-unidades.jpg" 
@@ -231,7 +231,7 @@
     "idCategoria": "suplementos",
     "nombre": "226ERS Proteína Vegetal 420gr Cacao&Pedacitos De Chocolate",
     "marca": "226ers",
-    "modelo": "Proteína Vegetal",
+    "modelo": "",
     "precio": 5689,
     "stock": 56,
     "img": "226ers-proteina-vegetal-420gr-cacao-pedacitos-de-chocolate.jpg" 

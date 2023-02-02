@@ -1,26 +1,53 @@
+
+/*BACKGROUND DEL INDEX*/
+.fondo {background-color: hsl(0, 0%, 80%);}
+
+
+/*CARDS*/
 .cardProducto {
     width: 18rem;
-    margin: 0;
-    background-color: hsl(0, 0%, 97%);
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 2px;
 }
 
 .cardBody {
-    background-color: white;
-    margin-bottom: 3px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 0px;
     text-align: center;
 }
 
 img {
-    margin-top: 3px;
-}
+    padding-top: 20px;
+    border-radius: 10px ;
+    transition: all 0.8s; 
+    
+} img:hover {transform: scale(1.02);}
 
-.cardProductos {
-    margin:4px;
+.verProducto {border-radius: 3px;}
+
+/*.cardProductos {background-color: (0, 0%, 96%);
+    margin:20px;
     align-items: center;
-    justify-content: center;
-}
+    justify-content:center;
+}*/
+
+/*ITEM DETAIL*/
+.detalle {
+    border-radius: 3px;}
 
 .itemDetail {
     max-width: 540px;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
+
+/*BOTONES DEL ITEM DETAIL*/
+.finalizarcompra {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    border-radius: 3px;}
+
+.botonMas {border-radius: 3px;}
+.botonMenos {border-radius: 3px;}

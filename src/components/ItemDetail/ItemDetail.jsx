@@ -1,7 +1,7 @@
 import { ItemCount } from '../ItemCount/ItemCount'
 export const ItemDetail = ({ item }) => {
     return (
-        <div className='row g-0'>
+        <div className='row g-0 detalle'>
             <div className="col-md-4">
             <img src={`../img/${item.img}`} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
             </div>
@@ -12,10 +12,9 @@ export const ItemDetail = ({ item }) => {
                     <p className='card-text'>Precio: ${new Intl.NumberFormat('de-DE').format(item.precio)}</p>
                     <p className='card-text'>Stock: {item.stock}</p>
                     <ItemCount valInicial={1} stock={item.stock} />
-                    <button className='btn btn-primary'>Finalizar Compra</button>
                 </div>
+                <button className='btn btn-primary finalizarcompra'>Finalizar Compra</button>
             </div>
-
         </div>
     )
 }

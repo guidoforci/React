@@ -13,7 +13,7 @@ import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
 
 const App = () => {
   return (
-    <>
+    <div className='fondo'>
     <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -22,7 +22,7 @@ const App = () => {
         <Route path= '/category/:idCategoria' element= {<ItemListContainer/>} />
       </Routes>
     </BrowserRouter>
-    </>
+    </div>
   );
 }
 
