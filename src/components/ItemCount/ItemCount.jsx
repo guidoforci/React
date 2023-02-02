@@ -1,12 +1,13 @@
+
 import { useState } from "react"
 
-export const ItemCount = ({ValorInicial, Stock}) => {
+export const ItemCount = ({ valInicial, stock }) => {
 
-    const [contador, setContador] = useState(ValorInicial);
-           //Var    //Modificar var  //Estado inicial
+    const [contador, setContador] = useState(valInicial)
+    //Var       //Modificar var     //Estado inicial
 
-    const sumar = () => (contador < Stock) && setContador(contador + 1) //contador = contador + 1
-    const restar = () => (contador > ValorInicial ) && setContador(contador - 1) //contador = contador - 1
+    const sumar = () => (contador < stock) && setContador(contador + 1) //contador = contador + 1
+    const restar = () => (contador > valInicial) && setContador(contador - 1)  //Operador ternario sin else
 
 
     return (

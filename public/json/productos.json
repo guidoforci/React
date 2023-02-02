@@ -1,123 +1,240 @@
 [
-    {
-        "id": 1,
+
+    {"id": 1,
         "idCategoria": "zapatillas",
-        "nombre": "Notebook",
-        "marca": "Lenovo",
-        "modelo": "Y510P",
-        "precio": 60000,
-        "stock": 30,
-        "img": "notebook-lenovo.jpg"
-    },
+        "nombre": "Reebok Zapatillas NANO X2",
+        "marca": "Reebok",
+        "modelo": "Nano X2",
+        "precio": 47000,
+        "stock": 56,
+        "img": "reebok-zapatillas-nano-x2.jpg" },
+
     {
         "id": 2,
         "idCategoria": "zapatillas",
-        "nombre": "Celular",
-        "marca": "Xiomi",
-        "modelo": "Mi-9",
-        "precio": 35000,
-        "stock": 20,
-        "img": "xiaomi-mi-9.jpg"
+        "nombre": "Under Armour Zapatillas REIGN 4",
+        "marca": "Under Armour",
+        "modelo": "Nano X2",
+        "precio": 72000,
+        "stock": 38,
+        "img": "under-armour-zapatillas-tribase-reign-4.jpg" 
+
     },
     {
         "id": 3,
         "idCategoria": "zapatillas",
-        "nombre": "Smart Tv",
-        "marca": "Novatech",
-        "modelo": "50D1U",
-        "precio": 57000,
-        "stock": 15,
-        "img": "smart-tv-novatech.jpg"
+        "nombre": "Reebok Zapatillas NANO X1",
+        "marca": "Reebok",
+        "modelo": "Nano X1",
+        "precio": 36000,
+        "stock": 100,
+        "img": "reebok-zapatillas-nano-xi.jpg" 
     },
     {
         "id": 4,
-        "idCategoria": "indumentaria y accesorios",
-        "nombre": "Camara ",
-        "marca": "iQual",
-        "modelo": "C40",
-        "precio": 8000,
-        "stock": 30,
-        "img": "camara-iqual.jpg"
+        "idCategoria": "zapatillas",
+        "nombre": "Adidas Zapatillas POWERLIFT 5",
+        "marca": "Adidas",
+        "modelo": "Powerlift 5",
+        "precio": 86000,
+        "stock": 95,
+        "img": "adidas-zapatillas-powerlift-5.jpg" 
     },
     {
         "id": 5,
-        "idCategoria": "indumentaria y accesorios",
-        "nombre": "Mouse",
-        "marca": "Logitech",
-        "modelo": "G502",
-        "precio": 1400,
-        "stock": 7,
-        "img": "mouse-logitech.jpg"
+        "idCategoria": "zapatillas",
+        "nombre": "Nike Zapatillas METCON 7 FLYEASE",
+        "marca": "Nike",
+        "modelo": "Metcon 7",
+        "precio": 57000,
+        "stock": 84,
+        "img": "nike-zapatillas-metcon-7-flyease.jpg" 
     },
     {
         "id": 6,
         "idCategoria": "indumentaria y accesorios",
-        "nombre": "Auriculares",
-        "marca": "Motorola",
-        "modelo": "Pulse",
-        "precio": 4000,
-        "stock": 20,
-        "img": "motorola-pulse.jpg"
+        "nombre": "Kruskis Camiseta Manga Corta Crossfit DNA",
+        "marca": "Kruskis",
+        "modelo": "DNA",
+        "precio": 6000,
+        "stock": 23,
+        "img": "kruskis-camiseta-manga-corta-crossfit-dna.jpg"
     },
     {
         "id": 7,
         "idCategoria": "suplementos",
-        "nombre": "Celular",
-        "marca": "Apple",
-        "modelo": "Iphone X Silver",
-        "precio": 250000,
-        "stock": 10,
-        "img": "iphone-x.jpg"
+        "nombre": "Gold Nutrition Creatina 1000mg 60 Unidades Sabor Neutro",
+        "marca": "Gold Nutrition",
+        "modelo": "Creatina",
+        "precio": 9000,
+        "stock": 15,
+        "img": "gold-nutrition-creatina-1000mg-60-unidades-sabor-neutro.jpg"
     },
     {
         "id": 8,
         "idCategoria": "suplementos",
-        "nombre": "Apple TV",
-        "marca": "Apple ",
-        "modelo": "32 Gb",
-        "precio": 45000,
-        "stock": 30,
-        "img": "apple-tv.jpg"
+        "nombre": "BCAA SIS Aminoácidos 120 Unidades",
+        "marca": "Science In Sport",
+        "modelo": "BCAA",
+        "precio": 7500,
+        "stock": 19,
+        "img": "sis-aminoacidos-120-unidades.jpg" 
     },
     {
         "id": 9,
         "idCategoria": "suplementos",
-        "nombre": "Parlante",
-        "marca": "Kalley",
-        "modelo": "SPK200",
-        "precio": 34000,
-        "stock": 21,
-        "img": "parlante-kalley.png"
+        "nombre": "GU Roctane Recuperación Chocolate Suave",
+        "marca": "Roctane",
+        "modelo": "Protein Recovery",
+        "precio": 8000,
+        "stock": 17,
+        "img": "gu-roctane-recuperacion-chocolate-suave.jpg" 
     },
+
     {
         "id": 10,
         "idCategoria": "equipatugym",
-        "nombre": "Mac Air",
-        "marca": "Apple",
-        "modelo": "M1 2020",
-        "precio": 13000,
-        "stock": 25,
-        "img": "mac-air.jpg"
+        "nombre": "Bodytone Disco Bumper De Goma 25kg",
+        "marca": "Bodytone",
+        "modelo": "Bumper Plate",
+        "precio": 15300,
+        "stock": 33,
+        "img": "bodytone-disco-bumper-de-goma-25kg.jpg"
     },
+
     {
         "id": 11,
         "idCategoria": "equipatugym",
-        "nombre": "Celular",
-        "marca": "Samsung",
-        "modelo": "S20",
-        "precio": 85000,
-        "stock": 30,
-        "img": "samsung-s20.jpg"
+        "nombre": "Spokey Barra de Crossfit",
+        "marca": "Aketon",
+        "modelo": "Spokey",
+        "precio": 18550,
+        "stock": 12,
+        "img": "spokey-barra-crossfit-aketon.jpg"
+	
     },
+
     {
         "id": 12,
         "idCategoria": "equipatugym",
-        "nombre": "Notebook",
-        "marca": "HP",
-        "modelo": "Pavilion 15",
-        "precio": 120000,
-        "stock": 20,
-        "img": "hp-pavilion.jpg"
-    }
+        "nombre": "Dkn Technology Power Rack Jaula Crossfit Half",
+        "marca": "Dkn",
+        "modelo": "Half",
+        "precio": 15700,
+        "stock": 15,
+        "img": "dkn-technology-power-rack-jaula-crossfit-half.jpg"
+    },
+
+    {
+        "id": 13,
+        "idCategoria": "indumentaria y accesorios",
+        "nombre": "Adidas Camiseta Manga Corta Wo Base Logo",
+        "marca": "Adidas",
+        "modelo": "WO",
+        "precio": 8500,
+        "stock": 23,
+        "img": "adidas-camiseta-manga-corta-wo-base-logo.jpg"
+    },
+
+    {
+        "id": 14,
+        "idCategoria": "indumentaria y accesorios",
+        "nombre": "Adidas Camiseta Manga Corta Hiit En",
+        "marca": "Adidas",
+        "modelo": "Hiit",
+        "precio": 7900,
+        "stock": 36,
+        "img": "adidas-camiseta-manga-corta-hiit-en.jpg"
+    },
+
+    {
+        "id": 15,
+        "idCategoria": "indumentaria y accesorios",
+        "nombre": "Spokey Cuerda Crossfit",
+        "marca": "Spokey",
+        "modelo": "Tweet",
+        "precio": 2000,
+        "stock": 14,
+        "img": "spokey-cuerda-crossfit-tweet.jpg"
+    },
+
+    { "id": 16,
+    "idCategoria": "indumentaria y accesorios",
+    "nombre": "Adidas Pantalones Cortos D4 Hiit Gf 7",
+    "marca": "Adidas",
+    "modelo": "D4 Hiit",
+    "precio": 5000,
+    "stock": 12,
+    "img": "adidas-pantalones-cortos-d4-hiit-gf-7.jpg" },
+
+    {"id": 17,
+    "idCategoria": "indumentaria y accesorios",
+    "nombre": "Spokey Cuerda Crossfit",
+    "marca": "Spokey",
+    "modelo": "AirFlex",
+    "precio": 2700,
+    "stock": 56,
+    "img": "spokey-cuerda-crossfit.jpg" },
+
+    {"id": 18,
+    "idCategoria": "equipatugym",
+    "nombre": "Gymstick Balón Medicinal Pared 3kg",
+    "marca": "Gymstick",
+    "modelo": "MedBall",
+    "precio": 13000,
+    "stock": 40,
+    "img": "gymstick-balon-medicinal-pared-3kg.jpg"},
+    
+    {"id": 19,
+    "idCategoria": "equipatugym",
+    "nombre": "Kettlebell Olive Cast Iron 28kg",
+    "marca": "Olive",
+    "modelo": "Cast Iron",       
+    "precio": 17850,
+    "stock": 5,
+    "img": "olive-cast-iron-28kg.jpg"},
+
+    {"id": 20,
+    "idCategoria": "equipatugym",
+    "nombre": "Olive Rubber Hex 8kg Par",
+    "marca": "Olive",
+    "modelo": "Rubber Hex",       
+    "precio": 13950,
+    "stock": 16,
+    "img": "olive-rubber-hex-8kg-par.jpg"
+}, 
+
+    {"id": 21,
+    "idCategoria": "suplementos",
+    "nombre": "Gold Nutrition Avena Proteica Vegana Chocolate 300gr",
+    "marca": "Gold Nutrition",
+    "modelo": "Avena Proteica",
+    "precio": 3600,
+    "stock": 18,
+    "img": "gold-nutrition-avena-proteica-vegana-chocolate-300gr.jpg" 
+
+},
+
+
+{"id": 22,
+"idCategoria": "suplementos",
+"nombre": "Gold Nutrition Cápsulas De Cafeína 90 Unidades",
+"marca": "Gold Nutrition",
+"modelo": "Cápsulas de Cafeina",
+"precio": 3600,
+"stock": 31,
+"img": "gold-nutrition-capsulas-de-cafeina-90-unidades.jpg" 
+},
+
+{
+    "id": 23,
+    "idCategoria": "suplementos",
+    "nombre": "226ERS Proteína Vegetal 420gr Cacao&Pedacitos De Chocolate",
+    "marca": "226ers",
+    "modelo": "Proteína Vegetal",
+    "precio": 5689,
+    "stock": 56,
+    "img": "226ers-proteina-vegetal-420gr-cacao-pedacitos-de-chocolate.jpg" 
+}
 
 ]
