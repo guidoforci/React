@@ -6,8 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
-
-
+import {Contacto} from './Contacto/Contacto'
 
 
 
@@ -20,10 +19,15 @@ const App = () => {
         <Route path= '/' element= {<ItemListContainer/>} />
         <Route path= '/item/:id' element= {<ItemDetailContainer/>} />
         <Route path= '/category/:idCategoria' element= {<ItemListContainer/>} />
+        <Route path= '/contacto' element= {<Contacto/>} />
       </Routes>
     </BrowserRouter>
     </div>
   );
 }
 
+
+
 export default App;
+
+

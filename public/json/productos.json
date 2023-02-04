@@ -63,9 +63,9 @@
     {
         "id": 7,
         "idCategoria": "suplementos",
-        "nombre": "Gold Nutrition Creatina 1000mg 60 Unidades Sabor Neutro",
+        "nombre": "Creatina 1000mg 60 Unidades Sabor Neutro",
         "marca": "Gold Nutrition",
-        "modelo": "",
+        "modelo": "Gold Nutrition",
         "precio": 9000,
         "stock": 15,
         "img": "gold-nutrition-creatina-1000mg-60-unidades-sabor-neutro.jpg"
@@ -94,9 +94,9 @@
     {
         "id": 10,
         "idCategoria": "equipatugym",
-        "nombre": "Bodytone Disco Bumper De Goma 25kg",
+        "nombre": "Disco Bumper De Goma 25kg",
         "marca": "Bodytone",
-        "modelo": "",
+        "modelo": "Bodytone",
         "precio": 15300,
         "stock": 33,
         "img": "bodytone-disco-bumper-de-goma-25kg.jpg"
@@ -107,7 +107,7 @@
         "idCategoria": "equipatugym",
         "nombre": "Spokey Barra de Crossfit",
         "marca": "Aketon",
-        "modelo": "",
+        "modelo": "5KG",
         "precio": 18550,
         "stock": 12,
         "img": "spokey-barra-crossfit-aketon.jpg"
@@ -117,9 +117,9 @@
     {
         "id": 12,
         "idCategoria": "equipatugym",
-        "nombre": "Dkn Technology Power Rack Jaula Crossfit Half",
+        "nombre": "Dkn Technology Power Rack Jaula Crossfit",
         "marca": "Dkn",
-        "modelo": "",
+        "modelo": "Half",
         "precio": 15700,
         "stock": 15,
         "img": "dkn-technology-power-rack-jaula-crossfit-half.jpg"
@@ -128,9 +128,9 @@
     {
         "id": 13,
         "idCategoria": "indumentaria y accesorios",
-        "nombre": "Adidas Camiseta Manga Corta Wo Base Logo",
+        "nombre": "Adidas Camiseta Manga Corta Base Logo",
         "marca": "Adidas",
-        "modelo": "",
+        "modelo": "WO",
         "precio": 8500,
         "stock": 23,
         "img": "adidas-camiseta-manga-corta-wo-base-logo.jpg"
@@ -139,9 +139,9 @@
     {
         "id": 14,
         "idCategoria": "indumentaria y accesorios",
-        "nombre": "Adidas Camiseta Manga Corta Hiit En",
+        "nombre": "Adidas Camiseta Manga Corta Hiit",
         "marca": "Adidas",
-        "modelo": "",
+        "modelo": "EN",
         "precio": 7900,
         "stock": 36,
         "img": "adidas-camiseta-manga-corta-hiit-en.jpg"
@@ -160,9 +160,9 @@
 
     { "id": 16,
     "idCategoria": "indumentaria y accesorios",
-    "nombre": "Adidas Pantalones Cortos D4 Hiit Gf 7",
+    "nombre": "Adidas Pantalones Cortos D4 Hiit",
     "marca": "Adidas",
-    "modelo": "",
+    "modelo": "GF 7",
     "precio": 5000,
     "stock": 12,
     "img": "adidas-pantalones-cortos-d4-hiit-gf-7.jpg" },
@@ -187,18 +187,18 @@
     
     {"id": 19,
     "idCategoria": "equipatugym",
-    "nombre": "Kettlebell Olive Cast Iron 28kg",
+    "nombre": "Kettlebell Olive 28kg",
     "marca": "Olive",
-    "modelo": "",       
+    "modelo": "Cast Iron",       
     "precio": 17850,
     "stock": 5,
     "img": "olive-cast-iron-28kg.jpg"},
 
     {"id": 20,
     "idCategoria": "equipatugym",
-    "nombre": "Mancuernas Olive Rubber Hex 8kg Par",
+    "nombre": "Mancuernas Olive 8kg Par",
     "marca": "Olive",
-    "modelo": "",       
+    "modelo": "Rubber Hex",       
     "precio": 13950,
     "stock": 16,
     "img": "olive-rubber-hex-8kg-par.jpg"
@@ -206,9 +206,9 @@
 
     {"id": 21,
     "idCategoria": "suplementos",
-    "nombre": "Gold Nutrition Avena Proteica Vegana Chocolate 300gr",
+    "nombre": "Avena Proteica Vegana Chocolate 300gr",
     "marca": "Gold Nutrition",
-    "modelo": "",
+    "modelo": "Gold Nutrition ",
     "precio": 3600,
     "stock": 18,
     "img": "gold-nutrition-avena-proteica-vegana-chocolate-300gr.jpg" 
@@ -218,9 +218,9 @@
 
 {"id": 22,
 "idCategoria": "suplementos",
-"nombre": "Gold Nutrition Cápsulas De Cafeína 90 Unidades",
+"nombre": "Cápsulas De Cafeína 90 Unidades",
 "marca": "Gold Nutrition",
-"modelo": "",
+"modelo": "Gold Nutrition ",
 "precio": 3600,
 "stock": 31,
 "img": "gold-nutrition-capsulas-de-cafeina-90-unidades.jpg" 
@@ -229,9 +229,9 @@
 {
     "id": 23,
     "idCategoria": "suplementos",
-    "nombre": "226ERS Proteína Vegetal 420gr Cacao&Pedacitos De Chocolate",
+    "nombre": "226ERS Proteína Vegetal 420gr",
     "marca": "226ers",
-    "modelo": "",
+    "modelo": "Cacao&Pedacitos De Chocolate",
     "precio": 5689,
     "stock": 56,
     "img": "226ers-proteina-vegetal-420gr-cacao-pedacitos-de-chocolate.jpg" 

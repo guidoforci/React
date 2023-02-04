@@ -1,8 +1,7 @@
 
 import CartWidget from '../CartWidget/CartWidget';
-import SeccionHome from "./Secciones/SeccionHome";
+import Secciones from "./Secciones/Secciones";
 import Categorias from './Categorías/categorias';
-import SeccionContacto from "./Secciones/SeccionContacto";
 import RedesSociales from './RedesSociales/RedesSociales';
 
 
@@ -17,9 +16,8 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <SeccionHome/>
+                        <Secciones/>
                         <Categorias/>
-                        <SeccionContacto/>
                     </ul> 
                     <div>
                         <RedesSociales/>

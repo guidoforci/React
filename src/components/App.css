@@ -1,7 +1,16 @@
-
 /*BACKGROUND DEL INDEX*/
-.fondo {background-color: hsl(0, 0%, 80%);}
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 
+.fondo {min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.headerpalabras {
+    color: #feb06a;
+}
 
 /*CARDS*/
 .cardProducto {
@@ -13,29 +22,34 @@
 }
 
 .cardBody {
-    background-color: hsl(0, 0%, 97%);
+    border-color: #f3913c;
+    font-family: 'Kanit', sans-serif;
+    background-color: hsl(0, 0%, 96%);
     margin-bottom: 0px;
     text-align: center;
 }
 
 img {
     padding-top: 20px;
-    border-radius: 10px ;
-    transition: all 0.8s; 
-    
-} img:hover {transform: scale(1.02);}
+    border-radius: 10px;
+    transition: all 0.6s;
+}
 
-.verProducto {border-radius: 3px;}
+img:hover {
+    transform: scale(1.03);
+}
 
-/*.cardProductos {background-color: (0, 0%, 96%);
-    margin:20px;
-    align-items: center;
-    justify-content:center;
-}*/
+.verProducto {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
 
 /*ITEM DETAIL*/
 .detalle {
-    border-radius: 3px;}
+    font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+}
 
 .itemDetail {
     max-width: 540px;
@@ -45,9 +59,59 @@ img {
 
 /*BOTONES DEL ITEM DETAIL*/
 .finalizarcompra {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
     margin-bottom: 20px;
     margin-left: 15px;
-    border-radius: 3px;}
+    border-radius: 3px;
+}
 
-.botonMas {border-radius: 3px;}
-.botonMenos {border-radius: 3px;}
+.botonMas {
+    border-radius: 3px;
+}
+
+.botonMenos {
+    border-radius: 3px;
+}
+
+/*FORMULARIO*/
+.backgroundcontacto {
+    background-image: url(./img/backgroundContacto.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.formulario {
+    height: 100%;
+}
+
+.contactoTitulo {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.datosContacto {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+}
+
+.botonEnviar {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    margin-bottom: 100px;
+    color: white;
+}
