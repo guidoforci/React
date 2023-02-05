@@ -1,10 +1,7 @@
 /*BACKGROUND DEL INDEX*/
-    * {margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
+
 
 .fondo {
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.897);
 }
 
@@ -46,15 +43,22 @@ img:hover {
 }
 
 /*ITEM DETAIL*/
-.detalle {
+.detalle {width: 100%;
+    height: 100%;
     font-family: 'Kanit', sans-serif;
     border-radius: 3px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }
 
-.itemDetail {
-    max-width: 540px;
+.itemDetail {background-color: aliceblue;
+    height: 100%;
+    width: 100%;
     margin-top: 20px;
-    margin-bottom: 5px;
+    align-items: center;
+    ;
+    
 }
 
 /*BOTONES DEL ITEM DETAIL*/
@@ -75,17 +79,18 @@ img:hover {
 }
 
 /*FORMULARIO*/
-.backgroundcontacto {
+.backgroundcontacto {width: 100%;
     background-image: url(../img/contactoback.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    opacity: 0.9;
+
 }
 
 .formulario {
     height: 100%;
 }
+
 
 .contactoTitulo {
     font-family: 'Kanit', sans-serif;

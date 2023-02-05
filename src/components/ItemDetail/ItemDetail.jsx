@@ -1,7 +1,8 @@
 import { ItemCount } from '../ItemCount/ItemCount'
 export const ItemDetail = ({ item }) => {
     return (
-        <div className='row g-0 detalle'>
+        
+        <div className='row g-2 detalle'>
             <div className="col-md-4">
             <img src={`../img/${item.img}`} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
             </div>
