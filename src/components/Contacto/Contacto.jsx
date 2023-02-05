@@ -1,5 +1,6 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Contacto = () => {
     const datosFormulario = React.useRef() //Creo la referencia
@@ -7,6 +8,8 @@ export const Contacto = () => {
     const consultarFormulario = (e) => {
         e.preventDefault()
         console.log(datosFormulario.current) //Consulto el estado actual del formulario
+
+
         const datForm = new FormData(datosFormulario.current) //Genero un objeto iterator de esos datos
         const contacto = Object.fromEntries(datForm) //Transforma en un objeto literal
         console.log(contacto)
@@ -15,32 +18,33 @@ export const Contacto = () => {
     }
     return (
         <div className='backgroundcontacto'>
-        <div className="container formulario">
-            <h1 className='contactoTitulo'>CONTACTO</h1>
-            <form onSubmit={consultarFormulario} ref={datosFormulario}>
-                <div className="mb-3 datosContacto">
-                    <label htmlFor="nombre" className="form-label">NOMBRE</label>
-                    <input type="text" className="form-control" name="nombre" />
-                </div>
-                <div className="mb-3 datosContacto">
-                    <label htmlFor="email" className="form-label">EMAIL</label>
-                    <input type="email" className="form-control" name="email" />
-                </div>
-                <div className="mb-3 datosContacto">
-                    <label htmlFor="celular" className="form-label">CELULAR</label>
-                    <input type="number" className="form-control" name="celular"/>
-                </div>
-                <div className="mb-3 datosContacto">
-                    <label htmlFor="consulta" className="form-label">DEJANOS TU CONSULTA:</label>
-                    <textarea className="form-control" name="consulta" rows={3} defaultValue={""} />
-                </div>
-                <button type="submit" className="btn btn-primary botonEnviar">ENVIAR</button>
-            </form>
-        </div>
+            <div className="container formulario">
+                <h1 className='contactoTitulo'>CONTACTO</h1>
+                <form onSubmit={consultarFormulario} ref={datosFormulario}>
+                    <div className="mb-3 datosContacto">
+                        <label htmlFor="nombre" className="form-label">NOMBRE</label>
+                        <input type="text" className="form-control" name="nombre" /> 
+                    </div>
+                    <div className="mb-3 datosContacto">
+                        <label htmlFor="email" className="form-label">EMAIL</label>
+                        <input type="email" className="form-control" name="email" />
+                    </div>
+                    <div className="mb-3 datosContacto">
+                        <label htmlFor="celular" className="form-label">CELULAR</label>
+                        <input type="number" className="form-control" name="celular" />
+                    </div>
+                    <div className="mb-3 datosContacto">
+                        <label htmlFor="consulta" className="form-label">DEJANOS TU CONSULTA:</label>
+                        <textarea className="form-control" name="consulta" rows={3} defaultValue={""} />
+                    </div>
+                    <button type="submit" className="btn btn-primary botonEnviar">ENVIAR</button>
+                </form>
+            </div>
         </div>
 
     )
 }
+
 
 
 /*
