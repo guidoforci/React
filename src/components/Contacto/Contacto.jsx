@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { toast } from 'react-toastify'
 
 export const Contacto = () => {
     const datosFormulario = React.useRef() //Creo la referencia
@@ -8,12 +9,15 @@ export const Contacto = () => {
     const consultarFormulario = (e) => {
         e.preventDefault()
         console.log(datosFormulario.current) //Consulto el estado actual del formulario
-
-
         const datForm = new FormData(datosFormulario.current) //Genero un objeto iterator de esos datos
         const contacto = Object.fromEntries(datForm) //Transforma en un objeto literal
         console.log(contacto)
         e.target.reset() //Reseteo el formulario
+        toast.success("Tu consulta fue recibida! Te responderemos a la brevedad.", {
+            position: toast.POSITION.TOP_RIGHT,
+            className: 'toasty',
+            autoClose: 1000,
+        });
         navigate("/")//Redirijo a pagina inicial
     }
     return (

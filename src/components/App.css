@@ -1,12 +1,6 @@
 /*BACKGROUND DEL INDEX*/
-
-
 .fondo {
-    background-color: rgba(0, 0, 0, 0.897);
-}
-
-.headerpalabras {
-    color: #feb06a;
+    background-color: rgba(255, 255, 255, 0.678);
 }
 
 /*CARDS*/
@@ -52,7 +46,7 @@ img:hover {
     justify-items: center;
 }
 
-.itemDetail {background-color: aliceblue;
+.itemDetail {background-color: rgba(255, 255, 255, 0.842);
     height: 100%;
     width: 100%;
     margin-top: 20px;
@@ -70,11 +64,11 @@ img:hover {
     border-radius: 3px;
 }
 
-.botonMas {
+.botonMas {margin-right: 10px;
     border-radius: 3px;
 }
 
-.botonMenos {
+.botonMenos {margin-left: 10px;
     border-radius: 3px;
 }
 
@@ -120,3 +114,9 @@ img:hover {
     margin-bottom: 100px;
     color: white;
 }
+
+/*TOASTIFY*/
+.toasty {margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    width: 24vw;}
