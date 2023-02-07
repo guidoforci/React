@@ -13,11 +13,12 @@ export const Contacto = () => {
         const contacto = Object.fromEntries(datForm) //Transforma en un objeto literal
         console.log(contacto)
         e.target.reset() //Reseteo el formulario
-        toast.success("Tu consulta fue recibida! Te responderemos a la brevedad.", {
+        toast.success("Tu consulta fue recibida! Te responderemos a la brevedad. CROSSTORE", {
             position: toast.POSITION.TOP_RIGHT,
             className: 'toasty',
-            autoClose: 1000,
-        });
+            autoClose: 1500,
+            theme: "dark",
+        }); //setup del toast 
         navigate("/")//Redirijo a pagina inicial
     }
     return (

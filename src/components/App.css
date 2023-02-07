@@ -75,7 +75,7 @@ img:hover {
 /*FORMULARIO*/
 .backgroundcontacto {width: 100%;
     background-image: url(../img/contactoback.jpg);
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
