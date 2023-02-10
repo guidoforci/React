@@ -4,7 +4,7 @@
 }*/
 
 /*CARDS*/
-/*.cardProducto {
+.cardProducto {
     width: 18rem;
     margin: 0 auto;
     margin-top: 20px;
@@ -22,26 +22,11 @@
 .cardBodyDark {
     background-color: hsl(0, 0, 33%);
     margin-bottom: 3px;
-    text-align: center;}*/
+    text-align: center;}
 
-    .cardProducto {
-        width: 18rem;
-        margin: 4px;
-        background-color: hsl(0, 0%, 97%);
-    }
+
+
     
-    .cardBody {
-        background-color: white;
-        margin-bottom: 3px;
-        text-align: center;
-    }
-    
-    .cardBodyDark {
-        background-color: hsl(0, 0, 33%);
-        margin-bottom: 3px;
-        text-align: center;}
-
-
 img {
     padding-top: 20px;
     border-radius: 10px;
