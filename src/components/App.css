@@ -1,24 +1,46 @@
 /*BACKGROUND DEL INDEX*/
-.fondo {
+/*.fondo {
     background-color: rgba(255, 255, 255, 0.678);
-}
+}*/
 
 /*CARDS*/
-.cardProducto {
+/*.cardProducto {
     width: 18rem;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsla(0, 0%, 96%, 0.712);
     border-radius: 2px;
 }
 
 .cardBody {
-    border-color: #f3913c;
     font-family: 'Kanit', sans-serif;
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsla(0, 0%, 96%, 0.336);
     margin-bottom: 0px;
     text-align: center;
 }
+
+.cardBodyDark {
+    background-color: hsl(0, 0, 33%);
+    margin-bottom: 3px;
+    text-align: center;}*/
+
+    .cardProducto {
+        width: 18rem;
+        margin: 4px;
+        background-color: hsl(0, 0%, 97%);
+    }
+    
+    .cardBody {
+        background-color: white;
+        margin-bottom: 3px;
+        text-align: center;
+    }
+    
+    .cardBodyDark {
+        background-color: hsl(0, 0, 33%);
+        margin-bottom: 3px;
+        text-align: center;}
+
 
 img {
     padding-top: 20px;
@@ -35,6 +57,12 @@ img:hover {
     letter-spacing: 2px;
     border-radius: 3px;
 }
+
+.verProductoDark {background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 3px;}
 
 /*ITEM DETAIL*/
 .detalle {width: 100%;
@@ -53,6 +81,16 @@ img:hover {
     align-items: center;
     ;
     
+}
+
+.itemDetailBodyDark {
+    background-color: hsla(0, 0%, 0%, 0.897);
+    color:white;
+}
+
+.darkMode {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: rgb(0, 0, 0);
 }
 
 /*BOTONES DEL ITEM DETAIL*/
@@ -118,5 +156,5 @@ img:hover {
 /*TOASTIFY*/
 .toasty {margin-top: 100px;
     font-family: 'Kanit', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     width: 24vw;}
