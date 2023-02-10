@@ -4,7 +4,7 @@ const DarkModeContext = createContext() //Crear mi contexto
 export const useDarkModeContext = () => useContext(DarkModeContext) //Me permite utilizar mi contexto
 
 export const DarkModeProvider = (props) => { //Defino mi proveedor del contexto
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(true)
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode)
