@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-const Secciones = () => {
+import React from "react";
+
+
+const Secciones = React.memo(() => {
     return (
         <>
             <li className="nav-item">
@@ -10,6 +13,6 @@ const Secciones = () => {
             </li>
         </>
     );
-}
+})
 
 export default Secciones;

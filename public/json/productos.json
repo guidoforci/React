@@ -7,7 +7,7 @@
         "modelo": "Nano X2",
         "precio": 47000,
         "stock": 56,
-        "img": "reebok-zapatillas-nano-x2.jpg" },
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/reebok-zapatillas-nano-x2.jpg?alt=media&token=3bbf9b8c-4823-48f4-bd70-d7cf5cd04a5f" },
 
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "modelo": "REIGN 4",
         "precio": 72000,
         "stock": 38,
-        "img": "under-armour-zapatillas-tribase-reign-4.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/under-armour-zapatillas-tribase-reign-4.jpg?alt=media&token=b464d6d1-5fea-4fba-b7f7-6cae42d941b1" 
 
     },
     {
@@ -28,7 +28,7 @@
         "modelo": "Nano X1",
         "precio": 36000,
         "stock": 100,
-        "img": "reebok-zapatillas-nano-xi.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/reebok-zapatillas-nano-xi.jpg?alt=media&token=78bd6fa9-70ff-4232-ad6d-bda592868d89" 
     },
     {
         "id": 4,
@@ -38,7 +38,7 @@
         "modelo": "Powerlift 5",
         "precio": 86000,
         "stock": 95,
-        "img": "adidas-zapatillas-powerlift-5.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/adidas-zapatillas-powerlift-5.jpg?alt=media&token=4a565e86-0e17-4e35-999a-0514a12f31c4" 
     },
     {
         "id": 5,
@@ -48,7 +48,7 @@
         "modelo": "Metcon 7",
         "precio": 57000,
         "stock": 84,
-        "img": "nike-zapatillas-metcon-7-flyease.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/nike-zapatillas-metcon-7-flyease.jpg?alt=media&token=e6bb675d-6075-4df4-b08f-2a158fc4f49e" 
     },
     {
         "id": 6,
@@ -58,7 +58,7 @@
         "modelo": "DNA",
         "precio": 6000,
         "stock": 23,
-        "img": "kruskis-camiseta-manga-corta-crossfit-dna.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/kruskis-camiseta-manga-corta-crossfit-dna.jpg?alt=media&token=277b3eb5-4a78-4c9f-b38a-e92d35045598"
     },
     {
         "id": 7,
@@ -68,7 +68,7 @@
         "modelo": "Gold Nutrition",
         "precio": 9000,
         "stock": 15,
-        "img": "gold-nutrition-creatina-1000mg-60-unidades-sabor-neutro.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/gold-nutrition-creatina-1000mg-60-unidades-sabor-neutro.jpg?alt=media&token=1f9d6e59-115f-4d62-bea1-793543f1c431"
     },
     {
         "id": 8,
@@ -78,7 +78,7 @@
         "modelo": "BCAA",
         "precio": 7500,
         "stock": 19,
-        "img": "sis-aminoacidos-120-unidades.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/sis-aminoacidos-120-unidades.jpg?alt=media&token=3c0819e4-852a-45ba-be64-65263b4ef788" 
     },
     {
         "id": 9,
@@ -88,7 +88,7 @@
         "modelo": "Protein Recovery",
         "precio": 8000,
         "stock": 17,
-        "img": "gu-roctane-recuperacion-chocolate-suave.jpg" 
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/gu-roctane-recuperacion-chocolate-suave.jpg?alt=media&token=bde67a60-6b1f-4fa1-be25-8b660125e507" 
     },
 
     {
@@ -99,7 +99,7 @@
         "modelo": "Bodytone",
         "precio": 15300,
         "stock": 33,
-        "img": "bodytone-disco-bumper-de-goma-25kg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/bodytone-disco-bumper-de-goma-25kg.jpg?alt=media&token=e3d2db16-36dd-44e2-8fbb-bc43caf6dad5"
     },
 
     {
@@ -110,7 +110,7 @@
         "modelo": "5KG",
         "precio": 18550,
         "stock": 12,
-        "img": "spokey-barra-crossfit-aketon.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/spokey-barra-crossfit-aketon.jpg?alt=media&token=3fc2924c-d188-4dd3-9943-ee6766b93628"
 	
     },
 
@@ -122,7 +122,7 @@
         "modelo": "Half",
         "precio": 15700,
         "stock": 15,
-        "img": "dkn-technology-power-rack-jaula-crossfit-half.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/dkn-technology-power-rack-jaula-crossfit-half.jpg?alt=media&token=6f41c799-e64b-4562-bb3b-0dbfdeeaa626"
     },
 
     {
@@ -133,7 +133,7 @@
         "modelo": "WO",
         "precio": 8500,
         "stock": 23,
-        "img": "adidas-camiseta-manga-corta-wo-base-logo.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/adidas-camiseta-manga-corta-wo-base-logo.jpg?alt=media&token=38c669f0-17a8-461d-803f-c95511208fc3"
     },
 
     {
@@ -144,7 +144,7 @@
         "modelo": "EN",
         "precio": 7900,
         "stock": 36,
-        "img": "adidas-camiseta-manga-corta-hiit-en.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/adidas-camiseta-manga-corta-hiit-en.jpg?alt=media&token=255371b8-a667-4657-9cc0-1d531aa68c6e"
     },
 
     {
@@ -155,7 +155,7 @@
         "modelo": "Tweet",
         "precio": 2000,
         "stock": 14,
-        "img": "spokey-cuerda-crossfit-tweet.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/spokey-cuerda-crossfit-tweet.jpg?alt=media&token=1e1ef55c-34e5-47bc-9966-13fd5f9aadb9"
     },
 
     { "id": 16,
@@ -165,7 +165,7 @@
     "modelo": "GF 7",
     "precio": 5000,
     "stock": 12,
-    "img": "adidas-pantalones-cortos-d4-hiit-gf-7.jpg" },
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/adidas-pantalones-cortos-d4-hiit-gf-7.jpg?alt=media&token=8a45e16f-4c51-4667-a734-80ac187e5376" },
 
     {"id": 17,
     "idCategoria": "indumentaria y accesorios",
@@ -174,7 +174,7 @@
     "modelo": "AirFlex",
     "precio": 2700,
     "stock": 56,
-    "img": "spokey-cuerda-crossfit.jpg" },
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/spokey-cuerda-crossfit.jpg?alt=media&token=98547df3-c000-4508-adfb-83ddfc2ca100" },
 
     {"id": 18,
     "idCategoria": "equipatugym",
@@ -183,7 +183,7 @@
     "modelo": "MedBall",
     "precio": 13000,
     "stock": 40,
-    "img": "gymstick-balon-medicinal-pared-3kg.jpg"},
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/gymstick-balon-medicinal-pared-3kg.jpg?alt=media&token=492d4fbb-d6ce-4825-86f0-659715286d06"},
     
     {"id": 19,
     "idCategoria": "equipatugym",
@@ -192,7 +192,7 @@
     "modelo": "Cast Iron",       
     "precio": 17850,
     "stock": 5,
-    "img": "olive-cast-iron-28kg.jpg"},
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/olive-cast-iron-28kg.jpg?alt=media&token=d5394fee-d348-4bbd-a273-85030f292364"},
 
     {"id": 20,
     "idCategoria": "equipatugym",
@@ -201,7 +201,7 @@
     "modelo": "Rubber Hex",       
     "precio": 13950,
     "stock": 16,
-    "img": "olive-rubber-hex-8kg-par.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/olive-rubber-hex-8kg-par.jpg?alt=media&token=79007646-15e2-4b4d-9c0d-038b04e6ec87"
 }, 
 
     {"id": 21,
@@ -211,7 +211,7 @@
     "modelo": "Gold Nutrition ",
     "precio": 3600,
     "stock": 18,
-    "img": "gold-nutrition-avena-proteica-vegana-chocolate-300gr.jpg" 
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/gold-nutrition-avena-proteica-vegana-chocolate-300gr.jpg?alt=media&token=d491b9dd-dcea-44d3-bcee-b0daf2b61c2f" 
 
 },
 
@@ -223,7 +223,7 @@
 "modelo": "Gold Nutrition ",
 "precio": 3600,
 "stock": 31,
-"img": "gold-nutrition-capsulas-de-cafeina-90-unidades.jpg" 
+"img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/gold-nutrition-capsulas-de-cafeina-90-unidades.jpg?alt=media&token=74b1e816-7256-4e9d-b1be-e16ee1df7404" 
 },
 
 {
@@ -234,7 +234,7 @@
     "modelo": "Cacao&Pedacitos De Chocolate",
     "precio": 5689,
     "stock": 56,
-    "img": "226ers-proteina-vegetal-420gr-cacao-pedacitos-de-chocolate.jpg" 
+    "img": "https://firebasestorage.googleapis.com/v0/b/curso-react---guido-forcinito.appspot.com/o/226ers-proteina-vegetal-420gr-cacao-pedacitos-de-chocolate.jpg?alt=media&token=d3c99c80-57f3-4e82-a2f0-854fd9d0ca7f" 
 }
 
 ]

@@ -11,7 +11,12 @@ import { ToastContainer } from 'react-toastify';
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
-import {Contacto} from './Contacto/Contacto'
+import {Contacto} from './Contacto/Contacto';
+import { Cart } from './Cart/Cart';
+
+
+
+import { cargarBDD } from '../firebase/firebase';
 
 //Context
 import { DarkModeProvider } from '../Context/DarkModeContext';
@@ -19,6 +24,8 @@ import { DarkModeProvider } from '../Context/DarkModeContext';
 
 
 const App = () => {
+  
+  cargarBDD ();
   return (
     <div className='fondo'>
     <BrowserRouter>
@@ -29,6 +36,7 @@ const App = () => {
             <Route path='/item/:id' element={<ItemDetailContainer/>}/>
             <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
             <Route path='/contacto' element={<Contacto/>}/> 
+            <Route path='/cart' element={<Cart/>}/>
           </Routes> 
           <ToastContainer/>
       </DarkModeProvider>

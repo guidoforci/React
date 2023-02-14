@@ -1,34 +1,28 @@
-/*BACKGROUND DEL INDEX*/
-/*.fondo {
-    background-color: rgba(255, 255, 255, 0.678);
-}*/
-
 /*CARDS*/
 .cardProducto {
     width: 18rem;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: hsla(0, 0%, 96%, 0.712);
+    background-color: rgba(255, 255, 255, 0.925);
     border-radius: 2px;
 }
 
 .cardBody {
     font-family: 'Kanit', sans-serif;
-    background-color: hsla(0, 0%, 96%, 0.336);
     margin-bottom: 0px;
     text-align: center;
 }
 
 .cardBodyDark {
-    background-color: hsl(0, 0, 33%);
+    font-family: 'Kanit', sans-serif;
     margin-bottom: 3px;
-    text-align: center;}
+    text-align: center;
+}
 
 
-    
 img {
     padding-top: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
     transition: all 0.6s;
 }
 
@@ -42,11 +36,13 @@ img:hover {
     border-radius: 3px;
 }
 
-.verProductoDark {background-color: black;
-    color: white;
+.verProductoDark {
+    background-color: rgba(255, 255, 255, 0.925);
+    color: black;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 2px;
-    border-radius: 3px;}
+    border-radius: 3px;
+}
 
 /*ITEM DETAIL*/
 .detalle {
@@ -54,21 +50,20 @@ img:hover {
     border-radius: 3px;
 }
 
-.itemDetail {background-color: rgba(255, 255, 255, 0.842);
-    
+.itemDetail {
+    background-color: rgba(255, 255, 255, 0.842);
     width: 100%;
     margin-top: 20px;
     align-items: center;
-    ;
-    
+
 }
 
-.itemDetailBodyDark { 
+.itemDetailBodyDark {
     width: 100%;
     margin-top: 20px;
     align-items: center;
     background-color: gainsboro;
-    color:rgb(12, 12, 12);
+    color: rgb(12, 12, 12);
 }
 
 .darkMode {
@@ -85,16 +80,19 @@ img:hover {
     border-radius: 3px;
 }
 
-.botonMas {margin-right: 10px;
+.botonMas {
+    margin-right: 10px;
     border-radius: 3px;
 }
 
-.botonMenos {margin-left: 10px;
+.botonMenos {
+    margin-left: 10px;
     border-radius: 3px;
 }
 
 /*FORMULARIO*/
-.backgroundcontacto {width: 100%;
+.backgroundcontacto {
+    width: 100%;
     background-image: url(../img/contactoback.jpg);
     background-position: top;
     background-attachment: fixed;
@@ -137,7 +135,59 @@ img:hover {
 }
 
 /*TOASTIFY*/
-.toasty {margin-top: 100px;
+.toasty {
+    margin-top: 100px;
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
-    width: 24vw;}
+    width: 24vw;
+}
+
+
+
+/*CART*/
+
+.cartContainer {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardFlex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+}
+
+.cardCart {
+    background-color: rgba(128, 128, 128, 0.466);
+    width: 50%;
+}
+
+.cuerpoCard {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+.tituloCard {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.detalleCard {
+    font-size: 13px
+}
+
+.eliminarProducto {
+    border-radius: 4px;
+}
+
+.botonesCart {
+    font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.897);
+}
