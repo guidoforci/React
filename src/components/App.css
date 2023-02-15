@@ -72,7 +72,7 @@ img:hover {
 }
 
 /*BOTONES DEL ITEM DETAIL*/
-.finalizarcompra {
+.finalizarcompra {font-size: 13px;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -91,6 +91,8 @@ img:hover {
 }
 
 .botonAgregarCarrito {
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
     margin-left: 20px;
     border-radius: 3px;
     letter-spacing: 2px;
