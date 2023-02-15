@@ -90,6 +90,12 @@ img:hover {
     border-radius: 3px;
 }
 
+.botonAgregarCarrito {
+    margin-left: 20px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
 /*FORMULARIO*/
 .backgroundcontacto {
     width: 100%;
