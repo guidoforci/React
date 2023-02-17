@@ -1,7 +1,12 @@
 import { BsTrash } from "react-icons/bs";
+import { useCarritoContext } from "../../Context/CarritoContext"
+
 
 
 export const ItemCart = ({ item }) => {
+    const {removeItem} = useCarritoContext()
+
+
     return (
         <div className="card mb-3 cardCart">
             <div className="row g-0 cardFlex">
@@ -11,13 +16,14 @@ export const ItemCart = ({ item }) => {
                 <div className="col-md-8 descripcionCard">
                     <div className="card-body cuerpoCard">
                         <h5 className="card-title tituloCard">{item.nombre} {item.modelo}</h5>
-                        <p className="card-text detalleCard">CANTIDAD: {item.cantidad}</p>
+                        <p className="card-text detalleCard">CANTIDAD: {item.cant}</p>
                         <p className="card-text detalleCard">PRECIO UNITARIO: $ {new Intl.NumberFormat('de-DE').format(item.precio)}</p>
-                        <p className="card-text detalleCard">SUBTOTAL: $ {new Intl.NumberFormat('de-DE').format(item.precio * item.cantidad)}</p>
-                        <button className="btn btn-primary eliminarProducto" onClick={() => "Borrar producto"}><BsTrash size="23" /></button>
+                        <p className="card-text detalleCard">SUBTOTAL: $ {new Intl.NumberFormat('de-DE').format(item.precio * item.cant)}</p>
+                        <button className="btn btn-primary eliminarProducto" onClick={() => removeItem(item.id)}><BsTrash size="23" /></button>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+

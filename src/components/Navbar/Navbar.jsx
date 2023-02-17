@@ -24,7 +24,7 @@ const Navbar = () => {
                     <div>
                         <RedesSociales/>
                     </div>
-                        <CartWidget cantidadCarrito={18}/>
+                        <CartWidget/>
                         <BotonDarkMode/>
                 </div>
             </div>

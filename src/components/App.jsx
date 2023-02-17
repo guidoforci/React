@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import 'react-toastify/dist/ReactToastify.css'
 
 //Router
@@ -11,37 +11,35 @@ import { ToastContainer } from 'react-toastify';
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
-import {Contacto} from './Contacto/Contacto';
+import { Contacto } from './Contacto/Contacto';
 import { Cart } from './Cart/Cart';
+import { Checkout } from './Checkout/Checkout';
 
-
-
-import { cargarBDD } from '../firebase/firebase';
 
 //Context
 import { DarkModeProvider } from '../Context/DarkModeContext';
-
-
+import { CarritoProvider } from '../Context/CarritoContext';
 
 const App = () => {
-  
-  cargarBDD ();
   return (
-    <div className='fondo'>
-    <BrowserRouter>
-      <DarkModeProvider>
-        <Navbar/>
-          <Routes>
-            <Route path='/' element={<ItemListContainer/>}/> 
-            <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-            <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
-            <Route path='/contacto' element={<Contacto/>}/> 
-            <Route path='/cart' element={<Cart/>}/>
-          </Routes> 
-          <ToastContainer/>
-      </DarkModeProvider>
-    </BrowserRouter>
-    </div>
+    <>
+      <BrowserRouter>
+        <CarritoProvider>
+          <DarkModeProvider>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/item/:id' element={<ItemDetailContainer />} />
+              <Route path='/category/:idCategoria' element={<ItemListContainer />} />
+              <Route path='/contacto' element={<Contacto />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/checkout' element={<Checkout/>}/>
+            </Routes>
+            <ToastContainer />
+          </DarkModeProvider>
+        </CarritoProvider>
+      </BrowserRouter>
+    </>
   );
 }
 
