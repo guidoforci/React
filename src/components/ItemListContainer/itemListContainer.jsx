@@ -19,7 +19,7 @@ export const ItemListContainer = () => {
         if(idCategoria) {
             getProductos()
             .then(items => {
-                const products = items.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(idCategoria))
+                const products = items.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === idCategoria)
                 const productsList = <ItemList products={products} plantilla={'item'}/> //Array de productos en JSX
                 setProductos(productsList)
             })

@@ -21,6 +21,7 @@ import { DarkModeProvider } from '../Context/DarkModeContext';
 import { CarritoProvider } from '../Context/CarritoContext';
 
 const App = () => {
+  
   return (
     <>
       <BrowserRouter>
