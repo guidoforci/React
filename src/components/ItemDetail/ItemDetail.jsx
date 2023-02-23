@@ -1,7 +1,8 @@
 //Contador
 import { ItemCount } from '../ItemCount/ItemCount'
-import { Link } from "react-router-dom"
 
+//Link para el Botón "Finalizar Compra"
+import { Link } from "react-router-dom"
 
 //Context
 import { useDarkModeContext } from '../../Context/DarkModeContext'
