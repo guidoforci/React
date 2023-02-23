@@ -1,5 +1,7 @@
 //Contador
 import { ItemCount } from '../ItemCount/ItemCount'
+import { Link } from "react-router-dom"
+
 
 //Context
 import { useDarkModeContext } from '../../Context/DarkModeContext'
@@ -28,7 +30,7 @@ export const ItemDetail = ({ item }) => {
                     <p className='card-text'>Stock: {item.stock}</p>
                     <ItemCount valInicial={1} stock={item.stock} onAdd={onAdd}/>
                 </div>
-                <button className='btn btn-primary finalizarcompra'>Finalizar Compra</button>
+                <Link className="nav-link" to={'/cart'}><button className='btn btn-primary finalizarcompra'>Finalizar Compra</button></Link>
             </div>
         </div>
     )
