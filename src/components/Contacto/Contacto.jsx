@@ -1,17 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { toast } from 'react-toastify'
+
+//CONTEXT
+import { useDarkModeContext } from "../../Context/DarkModeContext"
+
 
 export const Contacto = () => {
     const datosFormulario = React.useRef() //Creo la referencia
     let navigate = useNavigate() //Ubicacion actual de mi componente
+    const {darkMode} = useDarkModeContext()
     const consultarFormulario = (e) => {
         e.preventDefault()
-        console.log(datosFormulario.current) //Consulto el estado actual del formulario
         const datForm = new FormData(datosFormulario.current) //Genero un objeto iterator de esos datos
         const contacto = Object.fromEntries(datForm) //Transforma en un objeto literal
-        console.log(contacto)
         e.target.reset() //Reseteo el formulario
         toast.success("Tu consulta fue recibida! Te responderemos a la brevedad. CROSSTORE", {
             position: toast.POSITION.TOP_RIGHT,
@@ -24,21 +26,21 @@ export const Contacto = () => {
     return (
         <div className='backgroundcontacto'>
             <div className="container formulario">
-                <h1 className='contactoTitulo'>CONTACTO</h1>
+                <h1 className={`${darkMode ? 'contactoTitulo' : 'contactoTituloDark'}`}>CONTACTO</h1>
                 <form onSubmit={consultarFormulario} ref={datosFormulario}>
-                    <div className="mb-3 datosContacto">
+                    <div className={`mb-3 ${darkMode ? 'datosContacto' : 'datosContactoDark'}`}>
                         <label htmlFor="nombre" className="form-label">NOMBRE</label>
                         <input type="text" className="form-control" name="nombre" /> 
                     </div>
-                    <div className="mb-3 datosContacto">
+                    <div className={`mb-3 ${darkMode ? 'datosContacto' : 'datosContactoDark'}`}>
                         <label htmlFor="email" className="form-label">EMAIL</label>
                         <input type="email" className="form-control" name="email" />
                     </div>
-                    <div className="mb-3 datosContacto">
+                    <div className={`mb-3 ${darkMode ? 'datosContacto' : 'datosContactoDark'}`}>
                         <label htmlFor="celular" className="form-label">CELULAR</label>
                         <input type="number" className="form-control" name="celular" />
                     </div>
-                    <div className="mb-3 datosContacto">
+                    <div className={`mb-3 ${darkMode ? 'datosContacto' : 'datosContactoDark'}`}>
                         <label htmlFor="consulta" className="form-label">DEJANOS TU CONSULTA:</label>
                         <textarea className="form-control" name="consulta" rows={3} defaultValue={""} />
                     </div>

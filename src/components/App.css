@@ -105,7 +105,6 @@ img:hover {
     background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
 }
 
 .formulario {
@@ -126,12 +125,31 @@ img:hover {
     align-items: center;
 }
 
+.contactoTituloDark {font-family: 'Kanit', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 60px;
+    color: black;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;}
+
 .datosContacto {
     font-family: 'Kanit', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     font-weight: 600;
     color: white;
+    font-size: 20px;
+}
+
+.datosContactoDark {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
 }
 
 .botonEnviar {
