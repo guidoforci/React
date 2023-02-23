@@ -15,7 +15,6 @@ import { Contacto } from './Contacto/Contacto';
 import { Cart } from './Cart/Cart';
 import { Checkout } from './Checkout/Checkout';
 
-
 //Context
 import { DarkModeProvider } from '../Context/DarkModeContext';
 import { CarritoProvider } from '../Context/CarritoContext';

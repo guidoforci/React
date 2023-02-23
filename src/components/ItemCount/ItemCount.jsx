@@ -6,10 +6,8 @@ import { TbShoppingCartPlus } from "react-icons/tb";
 export const ItemCount = ({ valInicial, stock, onAdd }) => {
 
     const [contador, setContador] = useState(valInicial)
-    //Var       //Modificar var     //Estado inicial
-
-    const sumar = () => (contador < stock) && setContador(contador + 1) //contador = contador + 1
-    const restar = () => (contador > valInicial) && setContador(contador - 1)  //Operador ternario sin else
+    const sumar = () => (contador < stock) && setContador(contador + 1) 
+    const restar = () => (contador > valInicial) && setContador(contador - 1)
     const agregarCarrito = () => {
         onAdd(contador)
         toast(`Agregaste ${contador} productos al carrito!`, {
@@ -19,8 +17,6 @@ export const ItemCount = ({ valInicial, stock, onAdd }) => {
             theme: "dark",
         })
     }
-
-
     return (
         <>
             <button className="btn btn-primary botonMas" onClick={() => sumar()}>+</button>

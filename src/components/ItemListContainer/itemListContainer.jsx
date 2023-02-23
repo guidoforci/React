@@ -13,8 +13,7 @@ import { getProductos } from '../../firebase/firebase'
 export const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const {idCategoria}= useParams()
-    const {darkMode} = useDarkModeContext()
-    console.log(darkMode)
+    const {darkMode} = useDarkModeContext();
     useEffect(() => {
         if(idCategoria) {
             getProductos()

@@ -2,10 +2,13 @@ import { Link } from "react-router-dom"
 import { ItemList } from "../ItemList/ItemList"
 //Context 
 import { useCarritoContext } from "../../Context/CarritoContext"
+import { useDarkModeContext } from "../../Context/DarkModeContext"
+
+import { TbShoppingCartX } from "react-icons/tb";
 
 
 export const Cart = () => {
-    
+    const {darkMode} = useDarkModeContext()
     const {carrito, totalPrice, emptyCart } = useCarritoContext()
     
     return(
@@ -13,8 +16,8 @@ export const Cart = () => {
             { carrito.length === 0 
               ? //Si carrito esta vacio
                 <>
-                    <h2>Carrito vacio</h2>
-                    <Link className="nav-link" to={'/'}><button className="btn btn-dark">Continuar comprando</button></Link> 
+                    <h2 className={`${darkMode ? 'carritoVacio' : 'carritoVacioDark'}`}>CARRITO VACÍO <TbShoppingCartX size="50" className="tbShoppingCart"/></h2>
+                    <Link className="nav-link" to={'/'}><button className={`position-absolute top-50 start-50 translate-middle ${darkMode ? 'btn btn-primary contComp' : 'btn btn-secondary contCompDark'}`}>Continuar comprando</button></Link> 
                 </>
               : //Si carrito tiene productos
                 <div className="container cartContainer">

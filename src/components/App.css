@@ -72,7 +72,8 @@ img:hover {
 }
 
 /*BOTONES DEL ITEM DETAIL*/
-.finalizarcompra {font-size: 13px;
+.finalizarcompra {
+    font-size: 13px;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -125,7 +126,8 @@ img:hover {
     align-items: center;
 }
 
-.contactoTituloDark {font-family: 'Kanit', sans-serif;
+.contactoTituloDark {
+    font-family: 'Kanit', sans-serif;
     letter-spacing: 0px;
     font-weight: 600;
     font-size: 60px;
@@ -134,7 +136,8 @@ img:hover {
     margin-bottom: 50px;
     display: flex;
     justify-content: left;
-    align-items: center;}
+    align-items: center;
+}
 
 .datosContacto {
     font-family: 'Kanit', sans-serif;
@@ -217,3 +220,40 @@ img:hover {
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.897);
 }
+
+.carritoVacio {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 60px;
+    color: black;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carritoVacioDark {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tbShoppingCart {margin-left: 15px;}
+
+
+.contComp {font-family: 'Kanit', sans-serif; 
+    border-radius: 2px;}
+
+.contCompDark {font-family: 'Kanit', sans-serif;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.822);
+    border-radius: 2px;}

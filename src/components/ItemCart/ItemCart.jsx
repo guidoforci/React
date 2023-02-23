@@ -1,12 +1,8 @@
 import { BsTrash } from "react-icons/bs";
 import { useCarritoContext } from "../../Context/CarritoContext"
 
-
-
 export const ItemCart = ({ item }) => {
     const {removeItem} = useCarritoContext()
-
-
     return (
         <div className="card mb-3 cardCart">
             <div className="row g-0 cardFlex">

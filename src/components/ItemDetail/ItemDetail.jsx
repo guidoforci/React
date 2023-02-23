@@ -16,9 +16,7 @@ export const ItemDetail = ({ item }) => {
     const onAdd = (cantidad) => { //Agregar el producto al carrito
         addItem(item,cantidad)
     }
-    
     return (
-        
         <div className='row g-0 detalle'>
             <div className= "col-md-4">
             <img src={item.img} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
