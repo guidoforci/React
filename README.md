@@ -1,5 +1,5 @@
-Ecommerce React 39530
-Proyecto final Coderhouse React 39530
+Ecommerce "Crosstore"
+Proyecto final Coderhouse React - Comisión 39530: Alumno Guido Forcinito
 
 Requerimientos📋
 Es necesario instalar las dependencias figuradas en el package.json
