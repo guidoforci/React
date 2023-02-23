@@ -17,11 +17,12 @@ export const ItemDetail = ({ item }) => {
         addItem(item,cantidad)
     }
     return (
-        <div className='row g-0 detalle'>
-            <div className= "col-md-4">
-            <img src={item.img} className="img-fluid rounded-start" alt={`Imagen de ${item.nombre}`} />
+        
+        <div className='container detalle'>
+            <div className= "col-md-3">
+                <img src={item.img} className="img-fluid rounded-start imgDetail" alt={`Imagen de ${item.nombre}`} />
             </div>
-            <div className="col-md-8">
+            <div className="col">
                 <div className={`card-body ${darkMode ? 'itemDetail' : 'itemDetailBodyDark'}`}>
                     <h5 className='card-title'>{item.nombre} {item.modelo}</h5>
                     <p className='card-text'>Marca: {item.marca}</p>
