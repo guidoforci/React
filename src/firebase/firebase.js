@@ -4,7 +4,6 @@ import {getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, delet
 
 const firebaseConfig = {
     apiKey: process.env.API_KEY,
-    //"AIzaSyAs8sg9c05ZDbFWLAU4bT2P9Y5ymOZEHTE",
     authDomain: "curso-react---guido-forcinito.firebaseapp.com",
     projectId: "curso-react---guido-forcinito",
     storageBucket: "curso-react---guido-forcinito.appspot.com",
