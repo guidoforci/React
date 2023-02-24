@@ -334,3 +334,10 @@ img:hover {
     border-color: black;
     margin-top: 20px;
 }
+
+.tituloCheckout {margin-top: 80px;
+    margin-bottom: 50px;}
+
+.tituloCheckoutDark {margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.849);}
