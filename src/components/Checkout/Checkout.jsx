@@ -7,7 +7,6 @@ import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from "
 import { useDarkModeContext } from '../../Context/DarkModeContext'
 
 
-
 export const Checkout = () => {
     const { carrito, emptyCart, totalPrice } = useCarritoContext()
     const {darkMode} = useDarkModeContext();
@@ -23,21 +22,28 @@ export const Checkout = () => {
 
         aux.forEach(prodCarrito => {
             getProducto(prodCarrito.id).then(prodBDD => {
-                prodBDD.stock -= prodCarrito.cant // Descuento del stock la cantidad comprada
+                prodBDD.stock -= prodCarrito.cant // Para descontar del stock la cantidad comprada
                 updateProducto(prodCarrito.id, prodBDD)
             })
         })
 
+        if(cliente.email === cliente.repEmail) {
         createOrdenCompra(cliente, aux, totalPrice(), new Date().toISOString()).then(ordenCompra => {
             toast.success(`¡Muchas gracias por comprar con nosotros!, su orden de compra con el ID: ${ordenCompra.id
                 } por un total de $ ${new Intl.NumberFormat('de-DE').format(totalPrice())} fue realizada con exito`)
             emptyCart()
             e.target.reset()
             navigate("/")
-        })
-
+        })} else {
+            alert('Los mails no coinciden')
+            Swal.fire({
+                title: 'UPS! LOS MAILS NO COINCIDEN',
+                text: "Volvé a intentar colocando los mails correctos",
+                icon: 'warning',
+                showCancelButton: true,
+            })
+        }
     }
-
 
     return (
         <>
@@ -49,27 +55,33 @@ export const Checkout = () => {
                 </>
                 :
                 <div className="container" style={{ marginTop: "70px" }}>
-                    <h1 className={`${darkMode ? 'tituloCheckout' : 'tituloCheckoutDark'}`}>GRACIAS POR TU COMPRA!! PARA FINALIZAR, TE SOLICITAMOS UNOS DATOS PARA ENVIARTE EL DETALLE.</h1>
+                    <h1 className={`${darkMode ? 'tituloCheckout' : 'tituloCheckoutDark'}`}>GRACIAS POR TU COMPRA!! PARA FINALIZAR, TE SOLICITAMOS UNOS DATOS PARA COMPLETAR EL DETALLE.</h1>
                     <form onSubmit={consultarFormulario} ref={datosFormulario}>
+
                         <div className="mb-3">
                             <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>NOMBRE Y APELLIDO</label>
-                            <input type="text" className="form-control" name="nombre" />
+                            <input required type="text" className="form-control" name="nombre" />
                         </div>
+
                         <div className="mb-3">
                             <label htmlFor="email" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>EMAIL</label>
-                            <input type="email" className="form-control" name="email" />
+                            <input required type="email" className="form-control" name="email" />
                         </div>
+                        
+                        
                         <div className="mb-3">
                             <label htmlFor="repEmail" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>REPETIR EMAIL</label>
-                            <input type="email" className="form-control" name="repEmail" />
+                            <input required type="email" className="form-control" name="repEmail" />
                         </div>
+
+
                         <div className="mb-3">
                             <label htmlFor="celular" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>CELULAR</label>
-                            <input type="number" className="form-control" name="celular" />
+                            <input required type="number" className="form-control" name="celular" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="direccion" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>DIRECCIÓN DE ENVÍO</label>
-                            <input type="text" className="form-control" name="direccion" />
+                            <input required type="text" className="form-control" name="direccion" />
                         </div>
 
                         <button type="submit" className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>FINALIZAR COMPRA</button>
