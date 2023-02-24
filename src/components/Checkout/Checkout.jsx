@@ -53,12 +53,16 @@ export const Checkout = () => {
                     <h1 className={`${darkMode ? 'tituloCheckout' : 'tituloCheckoutDark'}`}>GRACIAS POR TU COMPRA!! PARA FINALIZAR, TE SOLICITAMOS UNOS DATOS PARA COMPLETAR EL DETALLE.</h1>
                     <form onSubmit={consultarFormulario} ref={datosFormulario}>
                         <div className="mb-3">
-                            <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>NOMBRE Y APELLIDO</label>
-                            <input required type="text" minlength="6" className="form-control" name="nombre" />
+                            <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>NOMBRE</label>
+                            <input required type="text" minlength="4" maxlength="25" className="form-control" name="nombre" />
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>APELLIDO</label>
+                            <input required type="text" minlength="4" maxlength="25"  className="form-control" name="apellido" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>EMAIL</label>
-                            <input type="email" className="form-control" size="64" maxlength="64" required placeholder="crosstore@gmail.com" pattern=".+@gmail\.com" name="email"/>
+                            <input type="email" className="form-control" size="64" maxlength="64" required placeholder="Ejemplo: crosstore@gmail.com" pattern=".+@gmail\.com" name="email"/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="repEmail" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>REPETIR EMAIL</label>
@@ -66,11 +70,11 @@ export const Checkout = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="celular" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>CELULAR</label>
-                            <input required type="number" minlength="10"  maxlength="15" className="form-control" name="celular"/>
+                            <input type="text" required minlength="10"  maxlength="15" pattern="[0-9]+" className="form-control" name="celular"/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="direccion" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>DIRECCIÓN DE ENVÍO</label>
-                            <input required type="text" minlength="6" className="form-control" name="direccion" placeholder="Calle Falsa 123, Springfield." />
+                            <input type="text" minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" className="form-control" name="direccion" placeholder="Ejemplo: Calle Falsa 123, Springfield." />
                         </div>
                         <button type="submit" className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>FINALIZAR COMPRA</button>
                     </form>
