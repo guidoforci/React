@@ -23,10 +23,10 @@ export const Cart = () => {
                 <div className="container cartContainer">
                     {<ItemList products={carrito} plantilla={'itemCart'}/>}
                     <div>
-                        <p>Resumen de la compra: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
-                        <button className="btn btn-dark botonesCart" onClick={() => emptyCart()}>Vaciar carrito</button>
-                        <Link className="nav-link" to={'/'}><button className="btn btn-dark botonesCart">Continuar Comprando</button></Link> 
-                        <Link className="nav-link" to={'/checkout'}><button className="btn btn-dark botonesCart">Finalizar compra</button></Link> 
+                        <p className={`${darkMode ? 'resumenCompra' : 'resumenCompraDark'}`}>RESUMEN DE TU COMPRA: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
+                        <button className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`} onClick={() => emptyCart()}>Vaciar carrito</button>
+                        <Link className="nav-link" to={'/'}><button className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>Continuar Comprando</button></Link> 
+                        <Link className="nav-link" to={'/checkout'}><button className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>Finalizar compra</button></Link> 
                     </div>
                 </div>
             }

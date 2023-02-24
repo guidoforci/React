@@ -45,20 +45,24 @@ img:hover {
 }
 
 /*ITEM DETAIL*/
-.detalle {display: flex;
+.detalle {
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Kanit', sans-serif;
     border-radius: 3px;
 }
 
-.itemDetail {background-color: rgba(255, 255, 255, 0.842);
+.itemDetail {
+    background-color: rgba(255, 255, 255, 0.842);
     width: 100%;
     margin-top: 20px;
     align-items: center;
 }
 
-.imgDetail {margin-top: 10px;}
+.imgDetail {
+    margin-top: 10px;
+}
 
 .itemDetailBodyDark {
     width: 100%;
@@ -74,7 +78,8 @@ img:hover {
 }
 
 /*BOTONES DEL ITEM DETAIL*/
-.finalizarcompra {font-size: 13px;
+.finalizarcompra {
+    font-size: 13px;
     font-family: 'Kanit', sans-serif;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -178,7 +183,6 @@ img:hover {
 
 .cartContainer {
     margin-top: 70px;
-    margin-bottom: 50px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -192,8 +196,17 @@ img:hover {
 }
 
 .cardCart {
-    background-color: rgba(128, 128, 128, 0.466);
     width: 50%;
+    border: solid;
+    border-radius: 3px;
+    color:rgba(0, 0, 0, 0.753)}
+
+.cardCartDark {
+    background-color: rgb(231, 229, 229);
+    width: 50%;
+    border: solid;
+    border-radius: 3px;
+    color:rgba(255, 255, 255, 0.815)
 }
 
 .cuerpoCard {
@@ -203,15 +216,31 @@ img:hover {
 
 .tituloCard {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .detalleCard {
-    font-size: 13px
+    margin-bottom: 8px;
+    font-size: 15px
 }
 
 .eliminarProducto {
+    margin-top: 10px;
     border-radius: 4px;
+}
+
+.resumenCompra {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.resumenCompraDark {
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
 }
 
 .botonesCart {
@@ -219,7 +248,15 @@ img:hover {
     border-radius: 3px;
     letter-spacing: 2px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.897);
+    
+}
+
+.botonesCartDark {font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    margin: 10px;
+    border: solid;
+    border-color: black;
 }
 
 .carritoVacio {
@@ -248,13 +285,52 @@ img:hover {
     align-items: center;
 }
 
-.tbShoppingCart {margin-left: 15px;}
+.tbShoppingCart {
+    margin-left: 15px;
+}
 
 
-.contComp {font-family: 'Kanit', sans-serif; 
-    border-radius: 2px;}
+.contComp {
+    font-family: 'Kanit', sans-serif;
+    border-radius: 2px;
+}
 
-.contCompDark {font-family: 'Kanit', sans-serif;
+.contCompDark {
+    font-family: 'Kanit', sans-serif;
     border: solid;
     border-color: rgba(0, 0, 0, 0.822);
-    border-radius: 2px;}
+    border-radius: 2px;
+}
+
+/*CHECKOUT*/
+
+.datosCheckout {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+
+.datosCheckoutDark {
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 20px;
+}
+
+.botonesCart {
+    font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.botonesCartDark {font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    margin-top: 20px;
+}

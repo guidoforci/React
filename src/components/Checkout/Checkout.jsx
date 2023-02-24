@@ -4,9 +4,13 @@ import React from "react"
 import { useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify'
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from "../../firebase/firebase"
+import { useDarkModeContext } from '../../Context/DarkModeContext'
+
+
 
 export const Checkout = () => {
     const { carrito, emptyCart, totalPrice } = useCarritoContext()
+    const {darkMode} = useDarkModeContext();
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
 
@@ -40,34 +44,34 @@ export const Checkout = () => {
             {carrito.length === 0
                 ?
                 <>
-                    <h2>No posee productos en el carrito</h2>
+                    <h2>TU CARRITO ESTÁ VACÍO!</h2>
                     <Link className="nav-link" to={'/'}><button className="btn btn-dark">CONTINUAR COMPRANDO</button></Link>
                 </>
                 :
-                <div className="container" style={{ marginTop: "20px" }}>
+                <div className="container" style={{ marginTop: "70px" }}>
                     <form onSubmit={consultarFormulario} ref={datosFormulario}>
                         <div className="mb-3">
-                            <label htmlFor="nombre" className="form-label">NOMBRE Y APELLIDO</label>
+                            <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>NOMBRE Y APELLIDO</label>
                             <input type="text" className="form-control" name="nombre" />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label">EMAIL</label>
+                            <label htmlFor="email" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>EMAIL</label>
                             <input type="email" className="form-control" name="email" />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="repEmail" className="form-label">REPETIR EMAIL</label>
+                            <label htmlFor="repEmail" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>REPETIR EMAIL</label>
                             <input type="email" className="form-control" name="repEmail" />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="celular" className="form-label">CELULAR</label>
+                            <label htmlFor="celular" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>CELULAR</label>
                             <input type="number" className="form-control" name="celular" />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="direccion" className="form-label">DIRECCIÓN DE ENVÍO</label>
+                            <label htmlFor="direccion" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>DIRECCIÓN DE ENVÍO</label>
                             <input type="text" className="form-control" name="direccion" />
                         </div>
 
-                        <button type="submit" className="btn btn-primary">FINALIZAR COMPRA</button>
+                        <button type="submit" className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>FINALIZAR COMPRA</button>
                     </form>
                 </div>
             }
