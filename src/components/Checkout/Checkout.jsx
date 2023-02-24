@@ -52,33 +52,26 @@ export const Checkout = () => {
                 <div className="container" style={{ marginTop: "70px" }}>
                     <h1 className={`${darkMode ? 'tituloCheckout' : 'tituloCheckoutDark'}`}>GRACIAS POR TU COMPRA!! PARA FINALIZAR, TE SOLICITAMOS UNOS DATOS PARA COMPLETAR EL DETALLE.</h1>
                     <form onSubmit={consultarFormulario} ref={datosFormulario}>
-
                         <div className="mb-3">
                             <label htmlFor="nombre" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>NOMBRE Y APELLIDO</label>
-                            <input required type="text" className="form-control" name="nombre" />
+                            <input required type="text" minlength="6" className="form-control" name="nombre" />
                         </div>
-
                         <div className="mb-3">
                             <label htmlFor="email" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>EMAIL</label>
-                            <input required type="email" className="form-control" name="email" />
+                            <input type="email" className="form-control" size="64" maxlength="64" required placeholder="crosstore@gmail.com" pattern=".+@gmail\.com" name="email"/>
                         </div>
-                        
-                        
                         <div className="mb-3">
                             <label htmlFor="repEmail" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>REPETIR EMAIL</label>
                             <input required type="email" className="form-control" name="repEmail" />
                         </div>
-
-
                         <div className="mb-3">
                             <label htmlFor="celular" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>CELULAR</label>
-                            <input required type="number" className="form-control" name="celular" />
+                            <input required type="number" minlength="10"  maxlength="15" className="form-control" name="celular"/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="direccion" className={`form-label ${darkMode ? 'datosCheckout' : 'datosCheckoutDark'}`}>DIRECCIÓN DE ENVÍO</label>
-                            <input required type="text" className="form-control" name="direccion" />
+                            <input required type="text" minlength="6" className="form-control" name="direccion" placeholder="Calle Falsa 123, Springfield." />
                         </div>
-
                         <button type="submit" className={`${darkMode ? 'btn btn-primary botonesCart' : 'btn btn-secondary botonesCartDark'}`}>FINALIZAR COMPRA</button>
                     </form>
                 </div>
