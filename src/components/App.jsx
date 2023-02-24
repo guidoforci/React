@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //Toastify
 import { ToastContainer } from 'react-toastify';
 
+
+
 //Componentes
 import Navbar from "./Navbar/Navbar";
 import { ItemListContainer } from './ItemListContainer/ItemListContainer';
@@ -35,7 +37,7 @@ const App = () => {
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={<Checkout/>}/>
             </Routes>
-            <ToastContainer />
+            <ToastContainer /> 
           </DarkModeProvider>
         </CarritoProvider>
       </BrowserRouter>

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom"
 import { toast } from 'react-toastify'
 import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from "../../firebase/firebase"
 import { useDarkModeContext } from '../../Context/DarkModeContext'
+import { TbShoppingCartX } from "react-icons/tb";
 
 
 export const Checkout = () => {
@@ -36,12 +37,6 @@ export const Checkout = () => {
             navigate("/")
         })} else {
             alert('Los mails no coinciden')
-            Swal.fire({
-                title: 'UPS! LOS MAILS NO COINCIDEN',
-                text: "Volvé a intentar colocando los mails correctos",
-                icon: 'warning',
-                showCancelButton: true,
-            })
         }
     }
 
@@ -50,8 +45,8 @@ export const Checkout = () => {
             {carrito.length === 0
                 ?
                 <>
-                    <h2>TU CARRITO ESTÁ VACÍO!</h2>
-                    <Link className="nav-link" to={'/'}><button className="btn btn-dark">CONTINUAR COMPRANDO</button></Link>
+                    <h2 className={`${darkMode ? 'carritoVacio' : 'carritoVacioDark'}`}>TU CARRITO ESTÁ VACÍO!<TbShoppingCartX size="50" className="tbShoppingCart"/></h2>
+                    <Link className="nav-link" to={'/'}><button className={`position-absolute top-50 start-50 translate-middle ${darkMode ? 'btn btn-primary contComp' : 'btn btn-secondary contCompDark'}`}>CONTINUAR COMPRANDO</button></Link>
                 </>
                 :
                 <div className="container" style={{ marginTop: "70px" }}>
